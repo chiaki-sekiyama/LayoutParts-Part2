@@ -1,1 +1,51 @@
 @charset "UTF-8";
+
+header {
+  background: #388bff;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/*widthを100%で指定しないと、wrapした分しか濃い青にならない＆1100pxが真ん中に調整できない
+posiition：fixedでナビゲーションバーを画面の決まった位置に固定
+body,headerで親要素の隙間を0で指定し、ブラウザ上部の隙間を無くす*/
+
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f2ff7b;
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin: 30px;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+/*リンクの色がどの挙動でも変化なかったので、
+色が変化しないよう全ての挙動で親要素の色を引き継ぐように指定*/

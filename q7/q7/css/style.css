@@ -1,1 +1,43 @@
 @charset "UTF-8";
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.baloon {
+  font-size: 16px;
+  line-height: 16px;
+  background: #fad296;
+  border: solid 5px #8f5a0a;
+  width: 500px;
+  padding: 20px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.baloon::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -27px;
+  border: 25px solid transparent;
+  border-top: 25px solid #8f5a0a;
+}
+
+.baloon::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -20px;
+  border: 18px solid transparent;
+  border-top: 18px solid #fad296;
+}
+
+/*吹き出しの三角はborderで作る。
+transparentで無色指定して色をつけたい部分のみ個別で色指定する。
+beforeで枠の色の三角を作り、afterで背景色と同色の三角を重ねることで
+枠付きの三角形に見せる。
+三角の位置(上下左右)どこに三角を置くかでpositionの％数値等を変えるので注意*/
