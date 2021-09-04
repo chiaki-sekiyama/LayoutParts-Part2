@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 header {
   background: #388bff;
   width: 100%;
@@ -32,6 +26,12 @@ posiition：fixedでナビゲーションバーを画面の決まった位置に
 
 ul {
   list-style: none;
+}
+
+ul .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 li {

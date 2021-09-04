@@ -126,7 +126,7 @@
 
 /*Q13*/
 
-.clearfix::after {
+ul .clearfix::after {
   content: "";
   display: block;
   clear: both;
