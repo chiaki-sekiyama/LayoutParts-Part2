@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 header {
   background: #388bff;
   width: 100%;
@@ -7,13 +13,8 @@ header {
   margin: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
 /*widthを100%で指定しないと、wrapした分しか濃い青にならない＆1100pxが真ん中に調整できない
-posiition：fixedでナビゲーションバーを画面の決まった位置に固定
-body,headerで親要素の隙間を0で指定し、ブラウザ上部の隙間を無くす*/
+posiition：fixedでナビゲーションバーを画面の決まった位置に固定*/
 
 .wrap {
   width: 1100px;

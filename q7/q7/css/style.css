@@ -17,23 +17,22 @@ main {
 }
 
 .baloon::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 10%;
   margin-left: -27px;
   border: 25px solid transparent;
   border-top: 25px solid #8f5a0a;
 }
 
 .baloon::after {
+  margin-left: -20px;
+  border: 18px solid transparent;
+  border-top: 18px solid #fad296;
+}
+
+.baloon::before,.baloon::after {
   content: "";
   position: absolute;
   top: 100%;
   left: 10%;
-  margin-left: -20px;
-  border: 18px solid transparent;
-  border-top: 18px solid #fad296;
 }
 
 /*吹き出しの三角はborderで作る。
