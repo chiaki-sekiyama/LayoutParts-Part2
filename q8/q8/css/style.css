@@ -6,17 +6,19 @@
 }
 
 .bg2 {
-  background-repeat: no-repeat;
+  background: url(../../image/coffee-background.jpg) no-repeat;
+  height: 500px;
 }
 
 .bg3 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url(../../image/coffee-background.jpg) no-repeat center/cover;
+  height: 500px;
 }
 
 .bg4 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background: url(../../image/coffee-background.jpg) no-repeat center/contain;
+  height: 500px;
 }
+
+/*-positionと-sizeは順序を守り、/で区切らないとエラーになってしまう。
+backgroundの一括指定をする際は、入力しない項目があると、デフォルトになってしまう。*/
