@@ -28,7 +28,7 @@ ul {
   list-style: none;
 }
 
-ul .clearfix::after {
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
@@ -42,9 +42,6 @@ li {
 
 a {
   text-decoration: none;
-}
-
-a:link, a:visited, a:hover, a:active {
   color: inherit;
 }
 
