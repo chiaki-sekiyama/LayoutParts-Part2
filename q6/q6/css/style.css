@@ -24,10 +24,6 @@ posiition：fixedでナビゲーションバーを画面の決まった位置に
   margin-top: 30px;
 }
 
-ul {
-  list-style: none;
-}
-
 .clearfix::after {
   content: "";
   display: block;
@@ -36,7 +32,7 @@ ul {
 
 li {
   float: left;
-  margin: 30px;
+  padding: 30px;
   color: #ffffff;
 }
 
